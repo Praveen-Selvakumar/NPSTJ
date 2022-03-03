@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "472921642950",
+    "firebase_url": "https://npstj-f70fe.firebaseio.com",
+    "project_id": "npstj-f70fe",
+    "storage_bucket": "npstj-f70fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472921642950:android:ec7fcef0d3cba5159e84c7",
+        "android_client_info": {
+          "package_name": "com.techvegasllp.npstj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472921642950-e8i6csn35b31ksvk6cqovaorm58a30fu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techvegasllp.npstj",
+            "certificate_hash": "4466c3cc697d38cca4ca4287dc7f5d30ad975738"
+          }
+        },
+        {
+          "client_id": "472921642950-epd56u8u3n8b339ivga7atrfdcn61k62.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techvegasllp.npstj",
+            "certificate_hash": "7b88a5bad2e54dee52698f92a4330adccfd36c60"
+          }
+        },
+        {
+          "client_id": "472921642950-k6omf015ouijhq5p0rg1rggu90sv5v5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYFUUFxRwxf42LLf1erxOjlTMIiFW6Bjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472921642950-k6omf015ouijhq5p0rg1rggu90sv5v5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

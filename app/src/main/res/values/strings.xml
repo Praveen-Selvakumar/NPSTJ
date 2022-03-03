@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">npstj</string>
+
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="address_string">10,kaliamman kovil street,
+
+               Palanganatham,
+
+               Madurai - 625 003,
+
+               Tamil nadu.
+    </string>
+    <string name="rs">\u20B9</string>
+    <string name="default_notification_channel_id">00241234562462</string>
+    <string name="notification_name">NPSTJ</string>
+
+
+    <string name="select_folder">Pick Folder</string>
+    <string name="folder_not_selected">Folder not selected yet</string>
+
+    <string name="select_file">Pick File</string>
+    <string name="file_not_selected">File not selected yet</string>
+    <string name="folder_pick_cancelled">Folder picking cancelled.</string>
+    <string name="file_pick_cancelled">File picking cancelled.</string>
+</resources>

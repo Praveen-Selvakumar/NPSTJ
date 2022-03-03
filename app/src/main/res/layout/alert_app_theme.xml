@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:id="@+id/bg_lt"
+    android:background="@color/dull_black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to NPSTJ ,"
+        android:layout_margin="15dp"
+        android:textColor="@color/lite_src_clr"/>
+
+    <TextView
+        android:id="@+id/content_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:text="Select Your App Theme"/>
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/lite_theme_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/content_txt"
+             android:layout_margin="15dp"
+             app:cardCornerRadius="5dp"
+             app:cardElevation="25dp">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white">
+
+             <ImageView
+                 android:id="@+id/icon_sun"
+                 android:layout_width="25dp"
+                 android:layout_height="25dp"
+                 android:layout_margin="5dp"
+                 android:src="@drawable/sun"/>
+
+             <TextView
+                 android:layout_toRightOf="@+id/icon_sun"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="20dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Light Mode"
+                 android:textSize="13dp"
+                  android:textColor="@color/black"
+                  />
+
+         </RelativeLayout>
+         </androidx.cardview.widget.CardView>
+
+      <ImageView
+          android:id="@+id/close_btn"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_alignParentRight="true"
+          android:layout_margin="15dp"
+          android:src="@drawable/close_icon__"
+          app:tint="@color/splash_src_clr" />
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/dark_theme_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/content_txt"
+             android:layout_margin="15dp"
+             android:layout_alignParentRight="true"
+             app:cardCornerRadius="5dp"
+             app:cardElevation="25dp"             >
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/splash_src_clr">
+
+             <ImageView
+                 android:id="@+id/icon_moon"
+                 android:layout_width="25dp"
+                 android:layout_height="25dp"
+                 android:layout_margin="5dp"
+                 android:src="@drawable/moon"/>
+
+             <TextView
+                 android:layout_toRightOf="@+id/icon_moon"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="20dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Dark Mode"
+                 android:textSize="13dp"
+                 android:textColor="@color/white"
+                 />
+
+         </RelativeLayout>
+         </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

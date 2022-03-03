@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00bbff"
+        android:visibility="gone"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardElevation="20dp">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/menu_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/menu_btn_tint"
+            android:layout_width="20dp"
+            android:layout_height="22.5dp"
+            android:src="@drawable/menu_icon"
+            app:tint="@color/splash_src_clr"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <ImageView
+            android:id="@+id/notification_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/notification_icon"
+            app:tint="@color/splash_src_clr"
+            android:layout_toRightOf="@+id/menu_btn"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            />
+        <TextView
+            android:id="@+id/notification_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/notification_btn"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="-15dp"
+            android:text="00"
+            android:textSize="10dp"
+            android:paddingTop="1.5dp"
+            android:paddingBottom="1.5dp"
+            android:paddingLeft="7.5dp"
+            android:paddingRight="7.5dp"
+            android:background="@drawable/notification_bg"
+            android:textColor="@color/white"
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/goback_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:src="@color/splash_src_clr"
+            />
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrow_back"
+            app:tint="@color/white"
+            android:layout_marginRight="27.5dp"/>
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        android:foregroundGravity="left"
+        android:layout_below="@+id/cd_toolbar"
+        android:visibility="visible"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/header_bg"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                 android:src="@drawable/gradient_center_bg"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@color/white"
+                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                 android:src="@drawable/user_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32.5dp"/>
+
+            <TextView
+                android:id="@+id/student_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="M SRUTHIKA  (NSA191463)"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:elevation="20dp"
+                android:layout_below="@+id/profile_image_"
+                />
+
+            <GridView
+                android:id="@+id/grid_view"
+                android:layout_below="@+id/header_bg"
+                android:layout_above="@+id/btm_nav_lt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:elevation="15dp"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"
+                />
+
+
+            <include
+                android:id="@+id/btm_nav_lt"
+                layout="@layout/btm_layout_test"
+                android:layout_alignParentBottom="true"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"/>
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+             app:itemIconTint="@drawable/nav_drawer_selector"
+            app:itemTextColor="@drawable/nav_drawer_selector"
+            android:background="#2f3541"
+            app:headerLayout="@layout/simple_header"
+            app:menu="@menu/left_drawer_nav"
+            android:layout_below="@id/cd_toolbar"
+            app:itemIconSize="16dp"
+             app:itemTextAppearance="@style/RobotoTextViewStyle"
+            android:theme="@style/NavigationDrawerStyle"
+            />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+</RelativeLayout>
+

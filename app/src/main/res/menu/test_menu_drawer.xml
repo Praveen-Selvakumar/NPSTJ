@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <group
+            android:id="@+id/nav_g1"
+            android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/btm_profile"
+                    android:title="Profile"
+                    android:icon="@drawable/profile_btn_icon"
+                    app:iconTint="@drawable/nav_drawer_selector"
+                    />
+        </group>
+
+        <group
+            android:id="@+id/nav_g2"
+            android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/btm_time_table"
+                    android:title="Time Table"
+                    android:icon="@drawable/left_drawer_calendar"
+                    />
+
+        </group>
+        <item
+            android:id="@+id/btm_home_work"
+            android:title="Home Work"
+            android:icon="@drawable/drawer_edit"/>
+        <item
+            android:id="@+id/btm_Examinations"
+            android:title="Examinations"
+            android:icon="@drawable/book_icon"
+            />
+        <item
+            android:id="@+id/btm_progress_report"
+            android:title="Progress Report"
+            android:icon="@drawable/drawer_progress_rater"/>
+        <item
+            android:id="@+id/btm_transportations"
+            android:title="Transportations"
+            android:icon="@drawable/bus"/>
+        <item
+            android:id="@+id/btm_circular"
+            android:title="Circular"
+            android:icon="@drawable/speech_bubble"/>
+        <item
+            android:id="@+id/btm_attendance"
+            android:title="Attendance"
+            android:icon="@drawable/attendance"
+            />
+        <item
+            android:id="@+id/btm_fees"
+            android:title="fees"
+            android:icon="@drawable/fees"/>
+        <item
+            android:id="@+id/btm_store"
+            android:title="Store"
+            android:icon="@drawable/home"/>
+        <item
+            android:id="@+id/btm_request"
+            android:title="Request"
+            android:icon="@drawable/request"/>
+
+        <item
+            android:id="@+id/btm_feedback"
+            android:title="Feedback"
+            android:icon="@drawable/back"/>
+
+        <item
+            app:actionLayout="@layout/radio_button"
+            android:id="@+id/btm_theme_btn"
+            android:title="" />
+
+
+
+
+
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+        android:id="@+id/student_lt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/kid"
+         android:elevation="10dp"
+        android:visibility="visible"
+        android:background="@drawable/home_card_lt_with_brd"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="12.5dp"
+            android:src="@color/white"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="15.5dp"
+            android:src="@drawable/boy_image_circular"/>
+
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="User name"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profile_image"/>
+        <TextView
+            android:id="@+id/student_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:hint="Roll number"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/student_name"
+            android:layout_toRightOf="@+id/profile_image"/>
+
+        <TextView
+            android:id="@+id/student_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="()"
+            android:textSize="14dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+

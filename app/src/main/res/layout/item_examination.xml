@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:elevation="15dp"
+    android:clipToPadding="false"
+    android:layout_marginTop="5dp">
+<RelativeLayout
+    android:elevation="15dp"
+    android:id="@+id/rel_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cirlce_img_one"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@color/splash_src_clr"
+        android:layout_margin="15dp"
+        android:elevation="20dp"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/exam"
+        android:layout_margin="22.5dp"
+        android:elevation="20dp"
+        />
+
+    <TextView
+        android:id="@+id/test_name"
+        android:text="TEST FROM NPSTJ"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/cirlce_img_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/test_start_date"
+        android:text="Start Date: 23/12/2021"
+        android:layout_below="@+id/test_name"
+         android:layout_toRightOf="@+id/cirlce_img_one"
+        android:layout_width="wrap_content"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/comments_txt"
+        android:text="Comments"
+        android:visibility="gone"
+        android:textColor="@color/splash_src_clr"
+        android:layout_below="@+id/test_start_date"
+         android:layout_toRightOf="@+id/cirlce_img_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="14dp"/>
+    <TextView
+        android:id="@+id/comments"
+        android:text="Test from NPSTJ"
+         android:layout_below="@+id/comments_txt"
+         android:layout_toRightOf="@+id/cirlce_img_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/dot_line_btn"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/dotted_barline"
+        android:rotation="90"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        app:tint="@color/splash_src_clr" />
+
+    <View
+        android:id="@+id/v_one"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/comments"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/test_end_date"
+        android:text="End Date: 23/12/2021"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/v_one"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/nav_g1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/btm_profile"
+            android:title="Profile"
+            android:icon="@drawable/profile_btn_icon"
+            app:iconTint="@drawable/nav_drawer_selector"
+            />
+    </group>
+
+    <group
+        android:id="@+id/nav_g2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/btm_time_table"
+            android:title="Time Table"
+            android:icon="@drawable/left_drawer_calendar"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/nav_g3"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/btm_home_work"
+            android:title="Home Work"
+            android:icon="@drawable/drawer_edit"/>
+    </group>
+
+    <group
+        android:id="@+id/nav_g4"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/btm_Examinations"
+            android:title="Examinations"
+            android:icon="@drawable/book_icon"
+            />
+    </group>
+
+    <group
+        android:id="@+id/nav_g5"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/btm_progress_report"
+            android:title="Progress Report"
+            android:icon="@drawable/drawer_progress_rater"/>
+    </group>
+
+    <group
+        android:id="@+id/nav_g6"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/btm_transportations"
+            android:title="Transportations"
+            android:icon="@drawable/bus"/>
+    </group>
+
+    <group
+        android:id="@+id/nav_g7"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/btm_circular"
+            android:title="Circular"
+            android:icon="@drawable/speech_bubble"/>
+    </group>
+
+    <group
+        android:id="@+id/nav_g8"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/btm_attendance"
+            android:title="Attendance"
+            android:icon="@drawable/attendance"
+            />
+    </group>
+
+    <group
+        android:id="@+id/nav_g9"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/btm_fees"
+            android:title="fees"
+            android:icon="@drawable/fees"/>
+    </group>
+
+    <group
+        android:id="@+id/nav_g10"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/btm_store"
+            android:title="Store"
+            android:icon="@drawable/home"/>
+    </group>
+
+
+    <group
+        android:id="@+id/nav_g11"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/btm_request"
+            android:title="Request"
+            android:icon="@drawable/request"/>
+    </group>
+
+
+    <item
+        android:id="@+id/btm_feedback"
+        android:title="Feedback"
+        android:icon="@drawable/back"/>
+
+
+
+
+
+
+
+
+</menu>
+
+
+

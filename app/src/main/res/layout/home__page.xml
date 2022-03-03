@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainframe.Home_Page">
+
+    <include
+        layout="@layout/btm_layout_test"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+ <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="61dp">
+
+ <RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:src="@drawable/bannerweb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+     <androidx.cardview.widget.CardView
+         android:id="@+id/theme_btn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/banner"
+         android:layout_marginTop="-50dp"
+         android:visibility="gone"
+         android:layout_marginRight="10dp"
+         android:layout_alignParentRight="true"
+         app:cardCornerRadius="5dp"
+         app:cardElevation="25dp"             >
+         <RelativeLayout
+             android:id="@+id/theme_bg"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@color/white">
+
+             <ImageView
+                 android:id="@+id/theme_icon"
+                 android:layout_width="35dp"
+                 android:layout_height="35dp"
+                 android:layout_margin="5dp"
+                 android:src="@drawable/sun"/>
+
+             <TextView
+                 android:id="@+id/theme_txt"
+                 android:layout_toRightOf="@+id/theme_icon"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="20dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Light Mode"
+                 android:textSize="15dp"
+                 android:textColor="@color/black"
+                 />
+
+         </RelativeLayout>
+     </androidx.cardview.widget.CardView>
+
+
+     <ImageView
+        android:id="@+id/banner_bg_clr"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:src="#036ab1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/logo"
+         android:layout_width="60dp"
+         android:layout_height="52dp"
+         android:layout_alignParentStart="true"
+         android:layout_marginStart="25dp"
+         android:layout_marginLeft="25dp"
+         android:layout_marginTop="50dp"
+         android:src="@drawable/logo_1"
+         android:visibility="visible"
+         app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <ImageView
+       android:id="@+id/kid"
+       android:layout_width="35dp"
+       android:layout_height="35dp"
+       android:src="@drawable/kid"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       android:layout_marginLeft="20dp"
+       android:visibility="visible"
+       android:layout_marginTop="-5dp"
+       android:layout_below="@+id/banner"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+         android:layout_toRightOf="@+id/kid"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7.5dp"
+        android:textSize="17dp"
+        android:text="SELECT YOUR KID"
+        android:textStyle="bold"
+        android:visibility="visible"
+        />
+
+     <TextView
+         android:id="@+id/null_alert"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:background="#faebcc"
+         android:gravity="center"
+         android:visibility="gone"
+         android:text="OOPS, No Student List available ..!"
+         android:textColor="#ff0000"
+         android:textSize="13.5dp"
+         android:paddingLeft="25dp"
+         android:paddingTop="10dp"
+         android:layout_margin="20dp"
+         android:paddingRight="25dp"
+         android:paddingBottom="10dp"
+         android:layout_below="@+id/kid"
+         />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/kid"
+         android:layout_marginTop="10dp"
+
+        />
+
+     <com.google.android.material.button.MaterialButton
+         android:id="@+id/dark_btn"
+         android:text="Dark"
+         android:visibility="gone"
+         android:layout_alignParentBottom="true"
+          android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+     <com.google.android.material.button.MaterialButton
+         android:id="@+id/default_btn"
+         android:text="Default"
+         android:visibility="gone"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+          android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>
+</RelativeLayout>

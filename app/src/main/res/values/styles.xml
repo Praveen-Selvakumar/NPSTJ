@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/splash_src_clr</item>
+        <item name="colorPrimaryDark">@color/splash_src_clr</item>
+        <item name="colorAccent">@color/lite_src_clr</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#D3D3D3</item>
+        <item name="boxStrokeWidth">1dp</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="android:windowBackground">@drawable/mysplash</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">14dp</item>
+        <!-- divider line color -->
+        <item name="android:listDivider">@color/dark_grey_</item>
+        <item name="android:textColorSecondary">@color/dark_grey_</item>
+        <!-- menu item height- vary as u need -->
+        <item name="listPreferredItemHeightSmall">32.5dp</item>
+
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/helvetica_narrow</item>
+    </style>
+
+
+
+</resources>

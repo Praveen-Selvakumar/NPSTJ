@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="15dp"
+    android:background="#00FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:elevation="10dp"
+            android:src="@drawable/profile_header_bg"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7.5dp"
+            android:text="User name"
+            android:textColor="@color/white"
+            android:elevation="15dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_lt"
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_content_lt">
+
+            <RelativeLayout
+                android:id="@+id/other_details_content_lt"
+                android:visibility="visible"
+                android:background="@drawable/profile_content_lt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/student_profile_img"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="20dp"
+                     android:src="@drawable/user_icon"
+                    android:layout_centerHorizontal="true"
+                    />
+                <ImageView
+                    android:id="@+id/icon_1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/id_card"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/student_profile_img"
+                    app:tint="@color/splash_src_clr" />
+
+                <TextView
+                    android:id="@+id/class_and_section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CLASS  SECTION"
+                    android:layout_toRightOf="@+id/icon_1"
+                    android:layout_marginTop="18dp"
+                    android:textStyle="bold"
+                    android:textSize="11.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/student_profile_img"
+                    android:textColor="@color/splash_src_clr"
+                    />
+                <TextView
+                    android:id="@+id/class_and_section_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Id card of student"
+                    android:layout_below="@+id/student_profile_img"
+                    android:layout_toRightOf="@+id/class_and_section"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="80dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    />
+                <ImageView
+                    android:id="@+id/roll_num_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/class_and_section"
+                    android:src="@drawable/list_img_two"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    app:tint="@color/splash_src_clr" />
+
+                <TextView
+                    android:id="@+id/roll_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ROLL NUMBER"
+                    android:layout_toRightOf="@+id/icon_1"
+                    android:layout_marginTop="17dp"
+                    android:textStyle="bold"
+                    android:textSize="11.5dp"                    android:layout_marginBottom="20dp"
+                    android:layout_below="@+id/class_and_section"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/splash_src_clr"
+                    />
+                <TextView
+                    android:id="@+id/roll_num_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NSA191463"
+                    android:textSize="12dp"
+                    android:layout_toRightOf="@+id/class_and_section"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_below="@+id/class_and_section"
+                     android:textColor="@color/black"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:src="@drawable/profile_footer_bg"
+                    android:layout_below="@+id/roll_num_txt"
+                    android:layout_marginTop="20dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     >
+
+
+    <RelativeLayout
+        android:id="@+id/parent_data_lt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF" >
+
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:elevation="10dp"
+            android:visibility="visible"
+            android:src="@drawable/profile_header_bg" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+             android:text="User name"
+             android:textColor="@color/white"
+            android:elevation="15dp"
+            android:textSize="16dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/content"
+             android:layout_below="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                       >
+
+            <RelativeLayout
+                android:id="@+id/other_details_content_lt"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_1"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:src="@drawable/scholar_cap"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                app:tint="@color/splash_src_clr" />
+
+            <TextView
+                android:id="@+id/job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JOB"
+                android:layout_toRightOf="@+id/icon_1"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/splash_src_clr"
+                />
+            <TextView
+                android:id="@+id/job_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profession"
+                android:layout_toRightOf="@+id/mail_id"
+                android:layout_marginTop="15dp"
+                android:textSize="14dp"
+                 android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                />
+       <ImageView
+                android:id="@+id/icon_2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/job_txt"
+               android:src="@drawable/telephone_icon"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                app:tint="@color/splash_src_clr" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHONE"
+                android:layout_toRightOf="@+id/icon_1"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_below="@+id/job_txt"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/splash_src_clr"
+                />
+            <TextView
+                android:id="@+id/phone_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="96002 83362"
+                android:textSize="14dp"
+                android:layout_toRightOf="@+id/mail_id"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/job_txt"
+                 android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                />
+            <ImageView
+                android:id="@+id/icon_3"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                app:tint="@color/splash_src_clr"
+                 android:src="@drawable/mail_icon"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/phone_txt"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/mail_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMAILID"
+                android:layout_toRightOf="@+id/icon_1"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_below="@+id/phone_txt"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/splash_src_clr"
+                />
+            <TextView
+                android:id="@+id/mail_id_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="praveen.ad.selvakumar@gmail.com"
+                android:layout_toRightOf="@+id/mail_id"
+                android:layout_marginTop="15dp"
+                 android:layout_below="@+id/phone_txt"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"
+                android:textSize="14dp"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/address_content_lt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@+id/other_details_content_lt"
+                android:background="@drawable/profile_content_lt">
+
+                 <ImageView
+                    android:id="@+id/icon_address"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/location_marker"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    app:tint="@color/splash_src_clr" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADDRESS"
+                     android:layout_toRightOf="@+id/icon_address"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/splash_src_clr"
+                    />
+                <TextView
+                    android:id="@+id/address_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:text="@string/address_string"
+                    android:layout_toRightOf="@+id/address"
+                    android:textSize="14dp"
+                    android:layout_marginTop="15dp"
+                    android:lineSpacingExtra="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/address_content_lt"
+                android:background="@drawable/profile_footer_bg"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+ </androidx.cardview.widget.CardView>

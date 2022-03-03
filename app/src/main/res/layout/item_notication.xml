@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_lt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/splash_src_clr"
+    android:layout_margin="5dp">
+    <TextView
+        android:id="@+id/not_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="2.5dp"
+        android:text="Researching Rescheduling of School reoping - CIRCULAR"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="16dp"
+        android:backgroundTint="@color/lite_src_clr"
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>

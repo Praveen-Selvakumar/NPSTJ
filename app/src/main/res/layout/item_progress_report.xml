@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginLeft="15dp"
+         app:cardCornerRadius="5dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/splash_src_clr"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2.5dp"
+                 android:layout_marginLeft="5dp"
+                 >
+
+                <RelativeLayout
+                    android:id="@+id/rel_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/grade_book_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GRADE BOOK 1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_margin="15sp"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/text_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Report card for the Academic year 2020 - \n\n2021.pdf"
+                            android:linksClickable="true"
+                            android:gravity="center"
+                            android:textSize="14dp"
+                            android:lineSpacingExtra="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/splash_src_clr"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="15dp"/>
+
+                        <TextView
+                            android:id="@+id/click_here_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text_link"
+                            android:layout_marginLeft="-110dp"
+                            android:layout_marginTop="-20dp"
+                            android:visibility="gone"
+                            android:textSize="14dp"
+                            android:layout_toRightOf="@+id/text_link"
+                            android:text="(Click here)"
+                            android:textColor="@color/black"/>
+
+
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+
